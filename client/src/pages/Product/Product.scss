@@ -1,0 +1,46 @@
+h1 {
+    color: rgb(7, 60, 120);
+}
+
+.upperbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 4%;
+    justify-content: space-between;
+}
+
+.text-container {
+    width: 48%;
+    background-color: wheat;
+    border-radius: 2%;
+    box-shadow: 0 10px 40px rgb(4, 54, 111);
+    /* Adjust the width as needed */
+}
+
+.info {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: gray;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.video-container {
+    width: 49.5%;
+    /* Adjust the width as needed */
+}
+
+.mobile-video {
+    width: 10%;
+    display: flex;
+    /* Add this line */
+    align-items: center;
+    justify-content: center;
+    /* Adjust the width as needed */
+}
+
+video {
+    width: 100%;
+}
