@@ -30,7 +30,7 @@ const Navbar = () => {
             <Link className="link" to="/contact">Contact</Link>
           </div>
           <div className="item">
-            <img src="public/images/EN.png" alt="" style={{ width: "3vw" }} />
+            <img src="images/EN.png" alt="" style={{ width: "2vw" }} />
             <ArrowDropDownIcon style={{ width: "3vw" }}/>
           </div>
         </div>
