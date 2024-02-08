@@ -1,3 +1,7 @@
+.box {
+    padding: 0 5% 4% 5%;
+}
+
 .form-group {
     position: relative;
     margin-bottom: 3%;
@@ -8,8 +12,8 @@
     top: 50%;
     left: 1%;
     transform: translateY(-50%);
-    color: #777;
-    font-size: 14px;
+    color: #d76060;
+    font-size: 100%;
     pointer-events: none;
     transition: top 0.3s, left 0.3s, font-size 0.3s;
 }
@@ -26,7 +30,7 @@ input,
 textarea {
     width: 100%;
     padding: 1%;
-    border: 1px solid #ccc;
+    border: 1px solid #19129a;
     border-radius: 5px;
 }
 
