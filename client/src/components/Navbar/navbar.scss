@@ -1,13 +1,16 @@
 .navbar {
-    height: 5.5vw;
+    height: 4vw;
+    display: flex;
+    vertical-align: middle;
     box-shadow: 0 0 100% rgba(0, 0, 0, 0.1);
     background-color: white;
+    padding-bottom: 1%;
     .wrapper {
         max-width: 100vw;
         height: 100%;
         padding: 1% 3%;
         display: flex;
-        font-size: 1.2vw;
+        font-size: 1.8vw;
         font-weight: 600;
         justify-content: space-between;
         .item {
@@ -22,10 +25,12 @@
         }
         .right {
             display: flex;
+            justify-content: center;
             align-items: left;
             gap: 4vw;
         }
         .icons {
+            justify-content: center;
             display: flex;
             align-items: center;
             gap: 2%;
