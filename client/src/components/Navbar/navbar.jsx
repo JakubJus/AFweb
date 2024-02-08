@@ -9,34 +9,29 @@ const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-        <Link className="link" to="/">
-            <img src="images/logo.png" alt="AquaForce" style={{ width: '50%' }} />
-              </Link>
+          <Link className="link" to="/">
+            <div className="logo">
+              <img src="images/logo.png" alt="AquaForce" style={{ width: "25%" }} />
+            </div>
+          </Link>
         </div>
         
         <div className="right">
-        <div className="item">
+          <div className="item">
             <Link className="link" to="/">Home</Link>
           </div>
           <div className="item">
-            <Link className="link" to="/swimmingpaddle">Swimming paddle</Link>
+            <Link className="link" to="/swimmingpaddle">Swimmingpaddle</Link>
           </div>
-          {/* <div className="item">
-            <Link className="link" to="/products/1">Our partners</Link>
-          </div> */}
-        
           <div className="item">
             <Link className="link" to="/about">About</Link>
           </div>
           <div className="item">
             <Link className="link" to="/contact">Contact</Link>
           </div>
-          {/* <div className="item">
-            <Link className="link" to="/">Become a partner</Link>
-          </div> */}
           <div className="item">
-            <img src="images/EN.png" alt="" style={{ width: '20px' }} />
-            <ArrowDropDownIcon />
+            <img src="public/images/EN.png" alt="" style={{ width: "3vw" }} />
+            <ArrowDropDownIcon style={{ width: "3vw" }}/>
           </div>
         </div>
       </div>
