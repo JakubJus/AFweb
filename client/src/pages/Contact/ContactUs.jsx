@@ -1,59 +1,127 @@
-.box {
-    padding: 0 5% 4% 5%;
-    /* Adjust the value as per your requirement */
-}
+import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import "./ContactUs.scss";
+import { contactConfig } from "./content_options"; // Import contactConfig
 
-.form-group {
-    position: relative;
-    margin-bottom: 3%;
-}
+const ContactUs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-.form-label {
-    position: absolute;
-    top: 50%;
-    left: 1%;
-    transform: translateY(-50%);
-    color: #d76060;
-    font-size: 100%;
-    pointer-events: none;
-    transition: top 0.3s, left 0.3s, font-size 0.3s;
-}
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
-input:focus+.form-label,
-textarea:focus+.form-label,
-input:not(:placeholder-shown)+.form-label {
-    top: -2%;
-    left: 1%;
-    font-size: 12px;
-}
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
-input,
-textarea {
-    width: 100%;
-    padding: 1%;
-    border: 1px solid #19129a;
-    border-radius: 5px;
-}
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
 
-textarea {
-    resize: vertical;
-}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-textarea:not(:focus):not(:placeholder-shown)+.form-label {
-    display: none;
-}
+    const newMessage = {
+      name,
+      email,
+      message,
+    };
 
-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 1% 2%;
-    border: none;
-    border-radius: 1%;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-}
+    try {
+      const response = await fetch("http://localhost:3001/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newMessage),
+      });
 
-button:hover {
-    background-color: #45a049;
-}
+      if (response.ok) {
+        console.log("Message submitted successfully!");
+
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        console.error("Error submitting message");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+  return (
+    <div className="box">
+    <Container>
+      <Row >
+        <Col>
+          <h1 >Contact Us!</h1>
+          <hr/>
+        </Col>
+      </Row>
+      <Row className="sec_sp">
+        <Col lg="5" className="mb-5">
+          <h3 className="color_sec py-4">Get in touch</h3>
+          <p>{contactConfig.description}</p>
+        </Col>
+        <Col lg="7" className="d-flex align-items-center">
+          <form className="contact__form w-100" onSubmit={handleSubmit}>
+            <Row>
+              <Col lg="6" className="form-group">
+               
+                <input
+                  className="form-control"
+                  id="name"
+                  name="name"
+                  type="text"
+                  value={name}
+                  onChange={handleNameChange}
+                  required
+                  placeholder="Enter your name"
+                />
+              </Col>
+              <Col lg="6" className="form-group">
+               
+                <input
+                  className="form-control rounded-0"
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={email}
+                  onChange={handleEmailChange}
+                  required
+                  placeholder="Enter your email"
+                />
+              </Col>
+            </Row>
+            <div className="form-group">
+              
+              <textarea
+                className="form-control rounded-0"
+                id="message"
+                name="message"
+                rows="5"
+                value={message}
+                onChange={handleMessageChange}
+                required
+                placeholder="Type your message"
+              ></textarea>
+            </div>
+            <br />
+            <Row>
+              <Col lg="12" className="form-group">
+                <button className="btn ac_btn" type="submit">
+                  Send
+                </button>
+              </Col>
+            </Row>
+          </form>
+        </Col>
+      </Row>
+    </Container>
+    </div>
+  );
+};
+
+export default ContactUs;
