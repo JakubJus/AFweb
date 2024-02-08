@@ -16,7 +16,7 @@ h1 {
     width: 48%;
     background-color: white;
     border-radius: 2%;
-    font-size: 40%;
+    font-size: 80%;
     box-shadow: 0 10px 40px rgb(11, 11, 11);
 }
 
@@ -30,7 +30,9 @@ h1 {
 
 .video-container {
     width: 49.5%;
-    /* Adjust the width as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile-video {
