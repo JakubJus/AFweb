@@ -1,38 +1,34 @@
 .navbar {
-    height: 80px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 5%;
+    box-shadow: 0 0 100% rgba(0, 0, 0, 0.1);
+    background-color: white;
     .wrapper {
+        max-width: 100vw;
         height: 100%;
-        padding: 10px 30px;
+        padding: 1% 3%;
         display: flex;
+        font-size: 80%;
+        font-weight: 600;
         justify-content: space-between;
-        align-items: center;
         .item {
             display: flex;
             align-items: center;
-            font-size: 18px;
+            font-size: 100%;
         }
         .left {
             display: flex;
             align-items: flex-start;
-            gap: 30px;
-        }
-        .center {
-            display: flex;
-            align-items: center;
-            font-size: 40px;
-            margin-left: 100px;
-            /* Center horizontally */
+            gap: 5vw;
         }
         .right {
             display: flex;
-            align-items: center;
-            gap: 30px;
+            align-items: left;
+            gap: 3vw;
         }
         .icons {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 2%;
             color: gray;
             cursor: pointer;
         }
