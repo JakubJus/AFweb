@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="left">
         <Link className="link" to="/">
-            <img src="images/logo.png" alt="AquaForce" style={{ height: '50px' }} />
+            <img src="public/images/logo.png" alt="AquaForce" style={{ width: '50%' }} />
               </Link>
         </div>
         
@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link className="link" to="/">Become a partner</Link>
           </div> */}
           <div className="item">
-            <img src="images/EN.png" alt="" style={{ width: '20px' }} />
+            <img src="public/images/EN.png" alt="" style={{ width: '20px' }} />
             <ArrowDropDownIcon />
           </div>
         </div>
