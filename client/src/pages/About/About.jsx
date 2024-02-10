@@ -1,10 +1,12 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import LinkIcon from '@mui/icons-material/Link';
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import './About.scss';
 
 const About = () => {
     const partnersRef = useRef();
+    const { t } = useTranslation(); // Access translation functions
 
     useEffect(() => {
         const partnersSection = partnersRef.current;
@@ -23,24 +25,24 @@ const About = () => {
 
     const missionVisionGoals = [
         {
-            title: "Our Mission",
-            content: "We develop  our company so others can have easier to work towards small goals",
+            title: t('About.mission'),
+            content: t('About.missionContent'),
         },
         {
-            title: "Our Vision",
-            content: "Our mission is to work towards a sport where everyone has the same opporunies and giving the chance toeveryone to start to swim nomatter the age. We work towards a more healthier and enhusastic society. We belive that sport and society should stand togher.",
+            title: t('About.vision'),
+            content: t('About.visionContent'),
         },
         {
-            title: "Our Goals",
-            content: "We want more people in the sport and ofcourse more athlet swimmers that can archive quicker times. Our goal is to help as many people who wants to get better and dont find a way how to imporve with a faster pace",
+            title: t('About.goals'),
+            content: t('About.goalsContent'),
         },
     ];
 
     return (
         <div>
             <div className="header">
-                <h1 className="title">About Us</h1>
-                <p className="subtitle">Discover our story and mission</p>
+                <h1 className="title">{t('About.title')}</h1>
+                <p className="subtitle">{t('About.subtitle')}</p>
             </div>
             
             <div className="mission-vision-goals">
@@ -53,18 +55,19 @@ const About = () => {
             </div>
 
             <div ref={partnersRef} className="partners-section rollingX">
-                <h2> Our partners </h2>
-                {/* Add images here that move on a rollX and rollY */}
-                {/* Example: */}
-                <img src="./images/innovation.png" alt="Partner 1" style={{ width: '120px' }} />
-                {/* Add more images as needed */}
+                <h2>{t('About.partners')}</h2>
+                <img src="./images/innovation.png" alt="Partner 1" />
             </div>
 
             <h2 className='timeline'>
                 <Link className="link" to="/timeline">
-                    Our timeline 
+                    {t('About.timeline')}
+                    
+                </Link>
+                <Link to="/timeline">
                     <LinkIcon />
                 </Link>
+                
             </h2>
         </div>
     );
