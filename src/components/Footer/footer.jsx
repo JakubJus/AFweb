@@ -46,12 +46,12 @@ const Footer = () => {
             <div className="bottom">
                 <div className="left">
                     <span className="logo">
-                        <img src="public/images/small_logo.png" alt="AquaForce" style={{ height: '50px' }} />
+                        <img src="images/small_logo.png" alt="AquaForce" style={{ height: '50px' }} />
                     </span>
                     <span className="copyright">© Copyright 2023. All Rights Reserved.</span>
                 </div>
                 <div className="right">
-                    <img src="public/images/KTH_logo.png" alt="KTH" style={{ height: '50px' }} />
+                    <img src="images/KTH_logo.png" alt="KTH" style={{ height: '50px' }} />
                 </div>
             </div>
         </div>
