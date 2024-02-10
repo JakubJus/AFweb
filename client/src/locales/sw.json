@@ -1,0 +1,102 @@
+{
+    "home": "Hem",
+    "swimmingpaddle": "Sim Paddel",
+    "about": "Om",
+    "contact": "Kontakt",
+    "swedish": "Svenska",
+    "english": "Engelska",
+    "product": {
+        "title": "Aqua Force Simpaddel",
+        "improveTechnique": "Förbättra din teknik",
+        "firstProductDescription": "Vår första produkt, utvecklad 2022, utvecklad med tanke på simmare. Perfekt för mätning av:",
+        "handSlipping": "Hand glider",
+        "pullTechnique": "Dragteknik",
+        "tooEarlyLatePhases": "För tidiga/senare faser av draget",
+        "easyToPutOn": "Lätt att sätta på designad för bättre prestanda i vattnet, ansluten direkt till din mobila enhet.",
+        "viewResults": "Se dina resultat",
+        "compareData": "Jämför din data och spåra din simning stroke utveckling. Bli snabbare med vår kraftmätning och fördela din kraft på ett smartare sätt.",
+        "trackPhases": "Spåra draget, pushen, ... fasen. Se topparna och vad du missar i din simning. Få en annan variabel i din simning och basera inte din förbättring enbart på din tid.",
+        "getRawData": "Få din råa data",
+        "rawDataApp": "Få vår råa data mobilapp för analys och tränare, denna app är utformad för dig som är intresserad av att se den råa data vi skickar till din enhet. Tillgänglig för IOS och Android-enheter.",
+        "marketNeed": "Marknaden behöver",
+        "positiveEffect": "Våra kunder har visat positiva effekter när de använder AquaForce paddel, de har förbättrat en betydande mängd. 9 av 10 kunder skulle rekommendera AquaForce."
+    },
+    "About": {
+        "title": "Om Oss",
+        "subtitle": "Upptäck vår historia och vår mission",
+        "mission": "Vår Mission",
+        "missionContent": "Vi utvecklar vårt företag så att andra kan ha enklare att arbeta mot små mål.",
+        "vision": "Vår Vision",
+        "visionContent": "Vår mission är att arbeta mot en sport där alla har samma möjligheter och ger chansen till alla att börja simma oavsett ålder. Vi arbetar mot ett friskare och mer entusiastiskt samhälle. Vi tror att sport och samhälle ska stå tillsammans.",
+        "goals": "Våra Mål",
+        "goalsContent": "Vi vill ha fler människor inom sporten och naturligtvis fler atletiska simmare som kan uppnå snabbare tider. Vårt mål är att hjälpa så många människor som vill bli bättre och inte hittar ett sätt att förbättra med en snabbare takt.",
+        "partners": "Våra partners",
+        "timeline": "Vår tidsaxel"
+    },
+
+
+    "timeline": {
+        "title": "AquaForce tidslinje",
+        "events": [{
+                "date": "2022/04",
+                "title": "Första idén",
+                "location": "Plats: Stockholm, Sverige",
+                "description": "Företagsidén och behovet av produkten fastställdes och de första stegen mot simdynan togs."
+            },
+            {
+                "date": "2022/06",
+                "title": "Första partner",
+                "location": "KTH Innovation",
+                "description": "AquaForce samarbetade med KTH innovation."
+            },
+            {
+                "date": "2022/08",
+                "title": "Första prototyp",
+                "location": "AquaForce p00",
+                "description": "Vår första prototyp skapades."
+            },
+            {
+                "date": "2023/02",
+                "title": "Skapande av webbplats",
+                "location": "Webbplats",
+                "description": "Vår webbplats skapades."
+            }
+        ]
+    },
+    "team": {
+        "title": "Vårt team",
+        "members": {
+            "jakub": {
+                "name": "Jakub Juszkieicz",
+                "description": "Huvudutvecklare för AquaForce",
+                "position": "VD och medgrundare",
+                "phoneNumber": "Telefonnummer"
+            }
+        }
+    },
+    "faq": {
+        "title": "FAQ",
+        "question1": "Vad är AquaForce?",
+        "answer1": "AquaForce är en startup som arbetar för simindustrin, vi utvecklar nya produkter för idrottare och dagliga simmare som inte har en tränare.",
+        "question2": "Varför ska jag använda AquaForce?",
+        "answer2": "AquaForce hjälper dig att utveckla din simning snabbare, våra grundare har upptäckt klyftan i simning där idrottare inte framsteg på en viss punkt... eller det tog för lång tid att framsteg för dem. AquaForce kan hjälpa dig att uppnå dina mål inom simning mycket snabbare.",
+        "question3": "Jag kan inte simma, kan jag använda AquaForce?",
+        "answer3": "Du kan använda vår andra version av vår paddel som fortfarande utvecklas, du kommer att ha möjlighet att utveckla din simning.",
+        "question4": "Hur kan jag partner/registrera mig för Aquaforce-produkt?",
+        "answer4": "Kontakta oss, eller lämna oss ett meddelande, du kan gå till Kontaktsida",
+        "contactLink": "Kontaktsida",
+        "question5": "Var är AquaForce baserat?",
+        "answer5": "AquaForce är för närvarande baserat i Stockholm.",
+        "question6": "Vilka data kan vi få från AquaForce?",
+        "answer6": "Vi mäter med paddeln kraften och många fler andra parametrar som vi beräknar.",
+        "question7": "Varför behöver jag mäta mig själv?",
+        "answer7": "Du kan enkelt följa dina framsteg och se vad du kan göra bättre när du simmar.",
+        "question8": "Var kan jag hitta AquaForce simning paddel?",
+        "answer8": "AquaForce är fortfarande under utveckling, om du är intresserad av att köpa en produkt/investera eller samarbeta upp, vänligen kontakta oss.",
+        "question9": "Jag är intresserad av att arbeta på AquaForce, vem ska jag kontakta?",
+        "answer9": "Kontakta oss, eller lämna oss ett meddelande, du kan gå till Kontaktsida",
+        "stillHaveQuestions": "Har du fortfarande frågor? Fråga oss!"
+    }
+
+
+}
