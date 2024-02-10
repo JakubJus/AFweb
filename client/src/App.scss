@@ -1,9 +1,33 @@
 .app {
-    .link {
-        color: inherit;
+    background-image: url('images/pool-water.jpg');
+    background-repeat: repeat;
+    .link2 {
+        color: black;
         text-decoration: none;
+        &:hover {
+            color: gray;
+            filter: brightness(1.2);
+        }
     }
-    background-image: url('/images/back.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.app .link {
+    background: linear-gradient(90deg, rgb(51, 85, 198), rgb(0, 0, 0));
+    text-decoration: none;
+    color: transparent;
+    /* Hiding text color */
+    background-clip: text;
+    /* Allow background to clip to the text */
+    -webkit-background-clip: text;
+    /* For Safari */
+    &:hover {
+        background: linear-gradient(270deg, rgb(51, 85, 198), rgb(238, 255, 6));
+        text-decoration: none;
+        color: transparent;
+        /* Hiding text color */
+        background-clip: text;
+        /* Allow background to clip to the text */
+        -webkit-background-clip: text;
+        filter: brightness(1.2);
+    }
 }
