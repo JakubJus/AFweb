@@ -25,15 +25,15 @@ const Home = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const scrollToBottom = () => {
-    const relevantData = document.querySelector(".relevant-data");
-    if (relevantData) {
-      relevantData.scrollIntoView({ behavior: "smooth"});
+  const scrollToNext = () => {
+    const textContainer = document.querySelector(".text-container");
+    if (textContainer) {
+      textContainer.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
+    <>
     <div className={`home-container ${isTextScrolling ? "text-scrolling" : ""}`}>
       <div className="video-container">
         <video
@@ -46,13 +46,18 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="scroll" onClick={scrollToBottom}>
+      <div className="scroll" onClick={scrollToNext}>
         <Link to="text-container" smooth={true} duration={1000}>
           <SouthIcon />
         </Link>
       </div>
-      <ProductDisplay /> {/* Render the ProductDisplay component */}
+      
     </div>
+    <div className="test-container">
+    <ProductDisplay /> 
+    </div>
+    </>
+
   );
 };
 
