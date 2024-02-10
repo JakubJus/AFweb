@@ -13,7 +13,7 @@ const Footer = () => {
                             AquaForce paddle 
                         </Link>
                         </span>
-                    <span>Accessories</span>
+                    {/* <span>Accessories</span> */}
                 </div>
                 <div className="item">
                     <h1>Links</h1>
@@ -22,8 +22,8 @@ const Footer = () => {
                             FAQ
                         </Link>
                     </span>
-                    <span>Pages</span>
-                    <span><Link className="link" to="/CookiesPrivacyPage">Cookies</Link></span>
+                    {/* <span>Pages</span>
+                    <span><Link className="link" to="/CookiesPrivacyPage">Cookies</Link></span> */}
                 </div>
                 <div className="item">
                 <Link className="link" to="/about">
