@@ -13,11 +13,14 @@ import Navbar from "./components/Navbar/navbar";
 import Contact from "./pages/Contact/Contact";
 import Log from "./pages/Log/Log";
 import About from "./pages/About/About";
-import FAQ from "./pages/FAQ/FAQ"
-import CookiesPrivacyPage from "./pages/cookies/Cookie/Cookie"
-import Policy from "./pages/cookies/another/policyPage"
+import FAQ from "./pages/FAQ/FAQ";
+import CookiesPrivacyPage from "./pages/cookies/Cookie/Cookie";
+import Policy from "./pages/cookies/another/policyPage";
 import Timeline from "./timeline/Timeline";
 import "./App.scss";
+
+// Import i18n configuration
+import i18n from './i18n';
 
 const Layout = () => {
   return (
