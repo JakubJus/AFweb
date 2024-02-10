@@ -1,0 +1,99 @@
+{
+    "home": "Home",
+    "swimmingpaddle": "Swimming Paddle",
+    "about": "About",
+    "contact": "Contact",
+    "swedish": "Swedish",
+    "english": "English",
+    "product": {
+        "title": "Aqua Force Swimming Paddle",
+        "improveTechnique": "Improve your technique",
+        "firstProductDescription": "Our first product, developed in 2022, developed in the thought of swimmers. Perfect for measurement of:",
+        "handSlipping": "Hand slipping",
+        "pullTechnique": "Pull technique",
+        "tooEarlyLatePhases": "Too early/late phases of the pull",
+        "easyToPutOn": "Easy to put on designed for better performance in water, connected directly to your mobile device.",
+        "viewResults": "View your results",
+        "compareData": "Compare your data and track your swimming stroke development. Get faster with our force measurement and distribute your force in a smarter way.",
+        "trackPhases": "Track the pull, push, ... phase. See the peaks and what you're missing in your swimming. Get another variable in your swimming and don't base your improvement solely on your time.",
+        "getRawData": "Get your raw data",
+        "rawDataApp": "Get our raw data mobile app for analytics and coaches, this app is designed for you who are interested to see the raw data we are sending to your device. Available for IOS and Android devices.",
+        "marketNeed": "The market is in need",
+        "positiveEffect": "Our customers have shown positive effects when using AquaForce paddle, they have improved a significant amount. 9 out of 10 customers would recommend AquaForce."
+    },
+    "About": {
+        "title": "About Us",
+        "subtitle": "Discover our story and mission",
+        "mission": "Our Mission",
+        "missionContent": "We develop our company so others can have an easier time working towards small goals.",
+        "vision": "Our Vision",
+        "visionContent": "Our mission is to work towards a sport where everyone has the same opportunities and giving the chance to everyone to start to swim no matter the age. We work towards a healthier and more enthusiastic society. We believe that sport and society should stand together.",
+        "goals": "Our Goals",
+        "goalsContent": "We want more people in the sport and of course more athlete swimmers that can achieve quicker times. Our goal is to help as many people who want to get better and don't find a way how to improve with a faster pace.",
+        "partners": "Our partners",
+        "timeline": "Our timeline"
+    },
+    "timeline": {
+        "title": "AquaForce Timeline",
+        "events": [{
+                "date": "2022/04",
+                "title": "First idea",
+                "location": "Location: Stockholm, Sweden",
+                "description": "The company idea and the need of the product were determined and first steps towards the swimpaddle were taken."
+            },
+            {
+                "date": "2022/06",
+                "title": "First partner",
+                "location": "KTH Innovation",
+                "description": "AquaForce partnered up with KTH innovation."
+            },
+            {
+                "date": "2022/08",
+                "title": "First prototype",
+                "location": "AquaForce p00",
+                "description": "Our first prototype was created."
+            },
+            {
+                "date": "2023/02",
+                "title": "Website creation",
+                "location": "Webpage",
+                "description": "Our webpage was created."
+            }
+        ]
+    },
+    "team": {
+        "title": "Our Team",
+        "members": {
+            "jakub": {
+                "name": "Jakub Juszkieicz",
+                "description": "Main developer of AquaForce",
+                "position": "CEO and CO-Founder",
+                "phoneNumber": "Telephone number"
+            }
+        }
+    },
+    "faq": {
+        "title": "FAQ",
+        "question1": "What is AquaForce?",
+        "answer1": "AquaForce is a Startup working for the swimming industry, we are developing new products for athletes and daily swimmers who haven't a coach.",
+        "question2": "Why should I use AquaForce?",
+        "answer2": "AquaForce is helping you to develop your swimming faster, our founders have spotted the gap in swimming where athletes didn't progress at a certain point... or it took too much time to progress for them. AquaForce can help you achieve your goals in swimming much faster.",
+        "question3": "I can't swim, can I use AquaForce?",
+        "answer3": "You can use our second version of our paddle which is still developed, you will have the possibility to develop your swimming.",
+        "question4": "How can I partner/register for Aquaforce product?",
+        "answer4": "Please contact us, or leave us a message, you can go to ",
+        "contactLink": "Contact page",
+        "question5": "Where is AquaForce based?",
+        "answer5": "AquaForce is currently based in Stockholm.",
+        "question6": "What data can we get from AquaForce?",
+        "answer6": "We measure with the paddle the force and much more other parameters that we calculate.",
+        "question7": "Why do I need to measure myself?",
+        "answer7": "You can easily track your progress and see what you can do better when you swim.",
+        "question8": "Where can I find AquaForce swimming paddle?",
+        "answer8": "AquaForce is still under development, if you're interested in buying a product/investing or partnering up please contact us. ",
+        "question9": "I'm interested to work at AquaForce, who should I contact?",
+        "answer9": "Please contact us, or leave us a message, you can go to ",
+        "stillHaveQuestions": "Still have questions? Ask us!"
+    }
+
+}

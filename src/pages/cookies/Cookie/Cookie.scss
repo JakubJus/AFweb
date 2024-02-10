@@ -1,0 +1,46 @@
+/* CookiesPrivacyPage.scss */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    /* Adjust the margin as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    /* Ensure padding and border don't add to the width */
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007bff;
+}

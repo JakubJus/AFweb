@@ -1,0 +1,101 @@
+$primary-color: #2a2e31;
+$secondary-color: #2ecc71;
+$container-max-width: 40%;
+$container-padding: 2%;
+$header-font-size: 2rem;
+$subtitle-font-size: 1.2rem;
+$mission-vision-goal-width: 30.00%;
+$mission-vision-goal-margin-bottom: 5%;
+$mission-vision-goal-padding: 1%;
+$mission-vision-goal-background: white;
+$mission-vision-goal-border-radius: 1%;
+$mission-vision-goal-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+$title-font-size: 1.5rem;
+$content-font-size: 1rem;
+$link-color: $primary-color;
+$link-hover-text-decoration: underline;
+$link-svg-margin-left: 1%;
+$partners-section-text-align: center;
+$partners-section-overflow: hidden;
+$partners-img-width: 1000%;
+$partners-img-max-width: 500%;
+$partners-img-margin: 1%;
+$partners-animation-duration: 6s;
+$partners-animation-distance: -100%;
+.container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: $container-padding;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1%;
+    .title {
+        font-size: $header-font-size;
+        margin-bottom: 1%;
+        color: $primary-color;
+    }
+    .subtitle {
+        font-size: $subtitle-font-size;
+        color: #2b2828;
+    }
+}
+
+.mission-vision-goals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    .mission-vision-goal {
+        width: $mission-vision-goal-width;
+        margin-bottom: $mission-vision-goal-margin-bottom;
+        padding: $mission-vision-goal-padding;
+        background: $mission-vision-goal-background;
+        border-radius: $mission-vision-goal-border-radius;
+        box-shadow: $mission-vision-goal-box-shadow;
+        h2 {
+            font-size: $title-font-size;
+            margin-bottom: 1%;
+            color: $primary-color;
+        }
+        p {
+            font-size: $content-font-size;
+            color: #333;
+        }
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: $link-color;
+    &:hover {
+        text-decoration: $link-hover-text-decoration;
+    }
+    svg {
+        margin-left: $link-svg-margin-left;
+    }
+}
+
+.timeline {
+    text-align: center;
+}
+
+.partners-section {
+    text-align: $partners-section-text-align;
+    overflow: $partners-section-overflow;
+    img {
+        width: 20%;
+        /* Adjust this value as needed */
+        //animation: rollX $partners-animation-duration linear infinite;
+    }
+    @keyframes rollX {
+        0%,
+        100% {
+            transform: translateX(100%);
+        }
+        50% {
+            transform: translateX($partners-animation-distance);
+        }
+    }
+}

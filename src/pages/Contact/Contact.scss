@@ -1,0 +1,36 @@
+.team-members-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 10%;
+}
+
+.team-member {
+    background-color: white;
+    text-align: center;
+    width: 15%;
+    padding: 4%;
+    border: 1px solid #242daf;
+    border-radius: 8%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    img {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        margin-bottom: 2%;
+    }
+    .member-details {
+        font-size: 100%;
+        h3 {
+            margin-bottom: 5px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        p:first-child {
+            font-weight: bold;
+        }
+    }
+}
