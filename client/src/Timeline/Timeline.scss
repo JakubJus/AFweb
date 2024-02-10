@@ -1,0 +1,28 @@
+.vertical-timeline {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+    .vertical-timeline-element-content {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 1%;
+        padding: 2%;
+        .vertical-timeline-element-title {
+            font-size: 1.2em;
+            margin-bottom: 1%;
+        }
+        .vertical-timeline-element-location {
+            margin-bottom: 0.5em; // Adjust as needed
+            color: #777;
+        }
+        .vertical-timeline-element-description {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .vertical-timeline-element-date {
+            font-weight: 800;
+            color: black;
+        }
+    }
+}
