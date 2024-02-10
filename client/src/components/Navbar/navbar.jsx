@@ -3,8 +3,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "./navbar.scss";
-import EN from './images/EN.png';
-import SWE from './images/SWE.png';
+import EN from '/images/EN.png';
+import SWE from '/images/SWE.png';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
