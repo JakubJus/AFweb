@@ -23,6 +23,14 @@ const About = () => {
         };
     }, []);
 
+    const handleLinkClick = (e) => {
+        e.preventDefault();
+        const href = e.currentTarget.getAttribute("href");
+        if (href) {
+            window.open(href, '_blank');
+        }
+    };
+    
     const missionVisionGoals = [
         {
             title: t('About.mission'),
@@ -37,7 +45,7 @@ const About = () => {
             content: t('About.goalsContent'),
         },
     ];
-
+    
     return (
         <div>
             <div className="header">
@@ -56,18 +64,18 @@ const About = () => {
 
             <div ref={partnersRef} className="partners-section rollingX">
                 <h2>{t('About.partners')}</h2>
-                <img src="./images/innovation.png" alt="Partner 1" />
+                <a href="https://www.kth.se/om/innovation" onClick={handleLinkClick} className="link">
+    <img src="./images/innovation.png" alt="Partner 1" />
+</a>
             </div>
 
             <h2 className='timeline'>
                 <Link className="link" to="/timeline">
                     {t('About.timeline')}
-                    
                 </Link>
                 <Link to="/timeline">
                     <LinkIcon />
                 </Link>
-                
             </h2>
         </div>
     );
