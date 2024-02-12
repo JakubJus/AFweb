@@ -14,7 +14,8 @@ const Timeline = () => {
   const timeline = translations.timeline;
 
   return (
-    <div className='cont'>
+    <div className="cent">
+        <div className='cont'>
       <h1>{timeline.title}</h1>
       <VerticalTimeline className="vertical-timeline">
         {timeline.events.map((event, index) => (
@@ -34,6 +35,7 @@ const Timeline = () => {
         ))}
       </VerticalTimeline>
     </div>
+    </div> 
   );
 };
 
