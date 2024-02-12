@@ -2,6 +2,7 @@ import React from 'react';
 import './policyPage.scss'
 const Policy = () => {
   return (
+    <div className="cent">
     <div className='comp'>
       <h1>Cookies Policy</h1>
 
@@ -52,6 +53,7 @@ const Policy = () => {
 
       <h2>Contact Us</h2>
       <p>If you have any questions or concerns regarding this policy, please contact us at support@example.com.</p>
+    </div>
     </div>
   );
 };
