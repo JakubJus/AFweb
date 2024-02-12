@@ -66,12 +66,15 @@
 }
 
 .dropdown-content {
-    position: absolute;
+    position: fixed;
     /* Changed */
     left: 90%;
+    /* Change from 90% to 0 */
+    top: 5vw;
+    /* Added to position it below the navbar */
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 1001;
     padding: 1%;
 }
 
