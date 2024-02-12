@@ -19,7 +19,7 @@ const About = () => {
   ];
 
   return (
-    <div>
+    <div className="cent">
       <div>
         <h1>{t('team.title')}</h1> {/* Fetch translated title */}
         <div className="team-members-container">
