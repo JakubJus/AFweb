@@ -3,6 +3,7 @@ import './Cookie.scss';
 
 const CookiesPrivacyPage = () => {
   return (
+    <div className= "cent">
     <div className="container">
       <h1>Cookies and Privacy Policy</h1>
 
@@ -47,6 +48,7 @@ const CookiesPrivacyPage = () => {
 
       <h2>7. Contact Us</h2>
       <p>If you have any questions or concerns regarding this policy, please contact us at support@example.com.</p>
+    </div>
     </div>
   );
 };
