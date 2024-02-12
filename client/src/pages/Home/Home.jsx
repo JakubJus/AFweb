@@ -34,6 +34,7 @@ const Home = () => {
 
   return (
     <>
+    <div className="cent">
     <div className={`home-container ${isTextScrolling ? "text-scrolling" : ""}`}>
       <div className="video-container">
         <video
@@ -55,6 +56,7 @@ const Home = () => {
     </div>
     <div className="test-container">
     <ProductDisplay /> 
+    </div>
     </div>
     </>
 
