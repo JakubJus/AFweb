@@ -18,6 +18,7 @@ const FAQ = () => {
   };
 
   return (
+    <div className="cent">
     <div className="faq-container">
       <h1>{t('faq.title')}</h1>
       <Collapse accordion activeKey={activePanel} onChange={handlePanelChange}>
@@ -57,6 +58,7 @@ const FAQ = () => {
           </Link>
         </p>
       </div>
+    </div>
     </div>
   );
 };
