@@ -47,7 +47,7 @@ const About = () => {
     ];
     
     return (
-        <div>
+        <div className="cent">
             <div className="header">
                 <h1 className="title">{t('About.title')}</h1>
                 <p className="subtitle">{t('About.subtitle')}</p>
