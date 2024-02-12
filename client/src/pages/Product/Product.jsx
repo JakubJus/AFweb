@@ -7,7 +7,7 @@ const Product = () => {
     const { t } = useTranslation(); // Access translation functions
 
     return (
-        <div>
+        <div className="cent">
             <h1>{t('product.title')}</h1>
             <div className="upperbox">
                 <div className="text-cont">
@@ -44,7 +44,9 @@ const Product = () => {
                     <p className="info">
                         {t('product.compareData')}
                         <br /><PhonelinkIcon /><br />
-                        {t('product.trackPhases')}
+                        {t('product.trackPhases')}<br /><br />
+                        {t('product.comphensiveApp')}
+                        
                     </p>
                 </div>
             </div>
