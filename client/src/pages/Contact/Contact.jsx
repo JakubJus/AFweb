@@ -1,6 +1,7 @@
 import './Contact.scss';
 import React from 'react';
 import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
+import ContactUs from "./ContactUs";
 
 const About = () => {
   const { t } = useTranslation(); // Access translation functions
@@ -19,7 +20,7 @@ const About = () => {
   ];
 
   return (
-    <div>
+    <div className="cent">
       <div>
         <h1>{t('team.title')}</h1> {/* Fetch translated title */}
         <div className="team-members-container">
@@ -41,6 +42,7 @@ const About = () => {
             </div>
           ))}
         </div>
+        <ContactUs/>
       </div>
     </div>
   );
