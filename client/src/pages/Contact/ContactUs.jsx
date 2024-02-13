@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./ContactUs.scss";
-import { contactConfig } from "./content_options"; // Import contactConfig
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -20,106 +20,107 @@ const ContactUs = () => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newMessage = {
-      name,
-      email,
-      message,
+    const templateParams = {
+      to_name: "Admin", // Change this to the actual recipient's name if needed
+      from_name: name,
+      from_email:email,
+      message: message,
     };
 
-    try {
-      const response = await fetch("http://localhost:3001/messages", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    emailjs
+      .send(
+        "service_leihk7q",
+        "template_jw20e0e",
+        templateParams,
+        "O_hYtvnIZayNuEZsH"
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Email sent successfully!",
+            response.status,
+            response.text
+          );
+          setName("");
+          setEmail("");
+          setMessage("");
         },
-        body: JSON.stringify(newMessage),
-      });
-
-      if (response.ok) {
-        console.log("Message submitted successfully!");
-
-        setName("");
-        setEmail("");
-        setMessage("");
-      } else {
-        console.error("Error submitting message");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
+        (error) => {
+          console.error("Error sending email:", error);
+          // Handle error here, such as displaying an error message to the user
+        }
+      );
   };
+
   return (
     <div className="box">
-    <Container>
-      <Row >
-        <Col>
-          <h1 >Contact Us!</h1>
-          <hr/>
-        </Col>
-      </Row>
-      <Row className="sec_sp">
-        <Col lg="5" className="mb-5">
-          <h3 className="color_sec py-4">Get in touch</h3>
-          <p>{contactConfig.description}</p>
-        </Col>
-        <Col lg="7" className="d-flex align-items-center">
-          <form className="contact__form w-100" onSubmit={handleSubmit}>
-            <Row>
-              <Col lg="6" className="form-group">
-               
-                <input
-                  className="form-control"
-                  id="name"
-                  name="name"
-                  type="text"
-                  value={name}
-                  onChange={handleNameChange}
-                  required
-                  placeholder="Enter your name"
-                />
-              </Col>
-              <Col lg="6" className="form-group">
-               
-                <input
+      <Container>
+        <Row>
+          <Col>
+            <h1>Contact Us!</h1>
+            <hr />
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5" className="mb-5">
+            <h3 className="color_sec py-4">Get in touch</h3>
+            <p>Description here</p>
+          </Col>
+          <Col lg="7" className="d-flex align-items-center">
+            <form className="contact__form w-100" onSubmit={handleSubmit}>
+              <Row>
+                <Col lg="6" className="form-group">
+                  <input
+                    className="form-control"
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={name}
+                    onChange={handleNameChange}
+                    required
+                    placeholder="Enter your name"
+                  />
+                </Col>
+                <Col lg="6" className="form-group">
+                  <input
+                    className="form-control rounded-0"
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={email}
+                    onChange={handleEmailChange}
+                    required
+                    placeholder="Enter your email"
+                  />
+                </Col>
+              </Row>
+              <div className="form-group">
+                <textarea
                   className="form-control rounded-0"
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={email}
-                  onChange={handleEmailChange}
+                  id="message"
+                  name="message"
+                  rows="5"
+                  value={message}
+                  onChange={handleMessageChange}
                   required
-                  placeholder="Enter your email"
-                />
-              </Col>
-            </Row>
-            <div className="form-group">
-              
-              <textarea
-                className="form-control rounded-0"
-                id="message"
-                name="message"
-                rows="5"
-                value={message}
-                onChange={handleMessageChange}
-                required
-                placeholder="Type your message"
-              ></textarea>
-            </div>
-            <br />
-            <Row>
-              <Col lg="12" className="form-group">
-                <button className="btn ac_btn" type="submit">
-                  Send
-                </button>
-              </Col>
-            </Row>
-          </form>
-        </Col>
-      </Row>
-    </Container>
+                  placeholder="Type your message"
+                ></textarea>
+              </div>
+              <br />
+              <Row>
+                <Col lg="12" className="form-group">
+                  <button className="btn ac_btn" type="submit">
+                    Send
+                  </button>
+                </Col>
+              </Row>
+            </form>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
