@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -17,9 +17,8 @@ import FAQ from "./pages/FAQ/FAQ";
 import CookiesPrivacyPage from "./pages/cookies/Cookie/Cookie";
 import Policy from "./pages/cookies/another/policyPage";
 import Timeline from "./timeline/Timeline";
+import LoadingSpinner from "./components/LoadingSpinner"; 
 import "./App.scss";
-
-// Import i18n configuration
 import i18n from './i18n';
 
 const Layout = () => {
@@ -33,22 +32,36 @@ const Layout = () => {
 };
 
 const App = () => {
-  console.log("App component rendered");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="swimmingpaddle" element={<Product />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="logIn" element={<Log />} />
-          <Route path="about" element={<About />} />
-          <Route path="FAQ" element={<FAQ />} />
-          <Route path="CookiesPrivacyPage" element={<CookiesPrivacyPage />} />
-          <Route path="cookies-policy" element={<Policy />} />
-          <Route path="timeline" element={<Timeline />} />
-        </Route>
-      </Routes>
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="swimmingpaddle" element={<Product />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="logIn" element={<Log />} />
+            <Route path="about" element={<About />} />
+            <Route path="FAQ" element={<FAQ />} />
+            <Route path="CookiesPrivacyPage" element={<CookiesPrivacyPage />} />
+            <Route path="cookies-policy" element={<Policy />} />
+            <Route path="timeline" element={<Timeline />} />
+          </Route>
+        </Routes>
+      )}
     </Router>
   );
 };
