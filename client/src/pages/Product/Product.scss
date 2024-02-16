@@ -13,13 +13,13 @@ h1 {
     margin-right: 2%;
     border-radius: 10px;
     margin-top: 4%;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     justify-content: space-between;
 }
 
 .text-cont {
     width: 48%;
-    font-size: 0.2em;
+    font-size: 1.7vw;
 }
 
 .info {
@@ -52,25 +52,4 @@ h1 {
 
 video {
     width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-    .text-cont {
-        font-size: 0.5em;
-        /* Adjust font size for medium screens */
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .text-cont {
-        font-size: 1em;
-        /* Adjust font size for large screens */
-    }
-}
-
-@media screen and (min-width: 2000px) {
-    .text-cont {
-        font-size: 1.5em;
-        /* Adjust font size for large screens */
-    }
 }
