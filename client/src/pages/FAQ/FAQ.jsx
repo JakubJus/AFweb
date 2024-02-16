@@ -19,7 +19,7 @@ const FAQ = () => {
 
   return (
     <div className="cent">
-    <div className="faq-container">
+    <div className="faq-cont">
       <h1>{t('faq.title')}</h1>
       <Collapse accordion activeKey={activePanel} onChange={handlePanelChange}>
         <Panel header={t('faq.question1')} key="1">
