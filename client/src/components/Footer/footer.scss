@@ -9,28 +9,28 @@
 
 .top {
     display: flex;
-    gap: 1.2vw;
+    gap: 0.9vw;
 }
 
 .top .item {
     flex: 1;
     flex-direction: column;
     text-align: justify;
-    font-size: 0.6vw;
-    margin: 0 2%;
+    font-size: 1.5vw;
 }
 
 .top h1 {
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: 1000;
     color: #3D62CD;
 }
 
 .top span {
+    max-width: 15vw;
     color: gray;
     display: flex;
     align-items: center;
-    padding: 1%;
+    padding: 0.1%;
 }
 
 .bottom {
@@ -46,6 +46,6 @@
 }
 
 .bottom .left .copyright {
-    font-size: 0.4vw;
+    font-size: 0.9vw;
     color: rgb(65 124 215);
 }
