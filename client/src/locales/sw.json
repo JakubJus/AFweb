@@ -1,14 +1,14 @@
 {
     "home": "Hem",
     "swimmingpaddle": "Sim Paddel",
-    "about": "Om",
+    "about": "Om OSS",
     "contact": "Kontakt",
     "swedish": "Svenska",
     "english": "Engelska",
     "product": {
         "title": "Aqua Force Simpaddel",
         "improveTechnique": "Förbättra din teknik",
-        "firstProductDescription": "Vår första produkt, utvecklad 2022, utvecklad med tanke på simmare. Perfekt för mätning av:",
+        "firstProductDescription": "Vår första produkt, utvecklad 2023, utvecklad med tanke på simmare. Perfekt för mätning av:",
         "handSlipping": "Hand glider",
         "pullTechnique": "Dragteknik",
         "tooEarlyLatePhases": "För tidiga/senare faser av draget",
@@ -39,25 +39,25 @@
     "timeline": {
         "title": "AquaForce tidslinje",
         "events": [{
-                "date": "2022/04",
+                "date": "2023/04",
                 "title": "Första idén",
                 "location": "Plats: Stockholm, Sverige",
                 "description": "Företagsidén och behovet av produkten fastställdes och de första stegen mot simdynan togs."
             },
             {
-                "date": "2022/06",
+                "date": "2023/06",
                 "title": "Första partner",
                 "location": "KTH Innovation",
                 "description": "AquaForce samarbetade med KTH innovation."
             },
             {
-                "date": "2022/08",
+                "date": "2023/08",
                 "title": "Första prototyp",
                 "location": "AquaForce p00",
                 "description": "Vår första prototyp skapades."
             },
             {
-                "date": "2023/02",
+                "date": "2024/02",
                 "title": "Skapande av webbplats",
                 "location": "Webbplats",
                 "description": "Vår webbplats skapades."
@@ -97,6 +97,23 @@
         "question9": "Jag är intresserad av att arbeta på AquaForce, vem ska jag kontakta?",
         "answer9": "Kontakta oss, eller lämna oss ett meddelande, du kan gå till Kontaktsida",
         "stillHaveQuestions": "Har du fortfarande frågor? Fråga oss!"
+    },
+    "products": {
+        "ourProducts": "Våra produkter",
+        "aquaForceSwimmingPaddle": "AquaForce Sim paddel",
+        "description": "Vår första produkt för bättre coachning och förbättring av teknik, utvecklad år 2023, har de grundläggande funktionerna hos vår paddel. Läs mer..."
+    },
+    "readMore": "Läs mer...",
+    "contactUs": {
+        "title": "Kontakta oss!",
+        "getInTouch": "Kom i kontakt",
+        "description": "Tveka inte att kontakta oss för eventuella förfrågningar, feedback eller frågor du kan ha. Vi finns här för att hjälpa dig!",
+        "enterName": "Ange ditt namn",
+        "enterEmail": "Ange din e-post",
+        "typeMessage": "Skriv ditt meddelande",
+        "send": "Skicka",
+        "successMessage": "Vi har fått ditt meddelande",
+        "errorMessage": "Vi har för närvärade problem med våra servrar försök att kontakta oss via mail"
     }
 
 

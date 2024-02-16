@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import LinkIcon from '@mui/icons-material/Link';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 import './About.scss';
+import Timeline from '../../timeline/Timeline';
 
 const About = () => {
     const partnersRef = useRef();
@@ -48,7 +49,7 @@ const About = () => {
     
     return (
         <div className="cent">
-            <div className="header">
+            <div className="head">
                 <h1 className="title">{t('About.title')}</h1>
                 <p className="subtitle">{t('About.subtitle')}</p>
             </div>
@@ -65,18 +66,11 @@ const About = () => {
             <div ref={partnersRef} className="partners-section rollingX">
                 <h2>{t('About.partners')}</h2>
                 <a href="https://www.kth.se/om/innovation" onClick={handleLinkClick} className="link">
-    <img src="./images/innovation.png" alt="Partner 1" />
+    <img src="./images/innovation.jpg" alt="Partner 1" />
 </a>
             </div>
 
-            <h2 className='timeline'>
-                <Link className="link" to="/timeline">
-                    {t('About.timeline')}
-                </Link>
-                <Link to="/timeline">
-                    <LinkIcon />
-                </Link>
-            </h2>
+            <Timeline/>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 {
     "home": "Home",
-    "swimmingpaddle": "Swimming Paddle",
+    "swimmingpaddle": "the Paddle",
     "about": "About",
     "contact": "Contact",
     "swedish": "Swedish",
@@ -8,7 +8,7 @@
     "product": {
         "title": "Aqua Force Swimming Paddle",
         "improveTechnique": "Improve your technique",
-        "firstProductDescription": "Introducing our inaugural product, conceived in 2022 with the needs of swimmers in mind. Tailored to precision, it excels in measuring:",
+        "firstProductDescription": "Introducing our inaugural product, conceived in 2023 with the needs of swimmers in mind. Tailored to precision, it excels in measuring:",
         "handSlipping": "Hand slipping",
         "pullTechnique": "Pull technique",
         "tooEarlyLatePhases": "Timing accuracy during phases of the pull",
@@ -37,25 +37,25 @@
     "timeline": {
         "title": "AquaForce Timeline",
         "events": [{
-                "date": "2022/04",
+                "date": "2023/04",
                 "title": "First idea",
                 "location": "Location: Stockholm, Sweden",
                 "description": "The company idea and the need of the product were determined and first steps towards the swimpaddle were taken."
             },
             {
-                "date": "2022/06",
+                "date": "2023/06",
                 "title": "First partner",
                 "location": "KTH Innovation",
                 "description": "AquaForce partnered up with KTH innovation."
             },
             {
-                "date": "2022/08",
+                "date": "2023/08",
                 "title": "First prototype",
                 "location": "AquaForce p00",
                 "description": "Our first prototype was created."
             },
             {
-                "date": "2023/02",
+                "date": "2024/02",
                 "title": "Website creation",
                 "location": "Webpage",
                 "description": "Our webpage was created."
@@ -95,6 +95,23 @@
         "question9": "I'm interested to work at AquaForce, who should I contact?",
         "answer9": "Please contact us, or leave us a message, you can go to ",
         "stillHaveQuestions": "Still have questions? Ask us!"
+    },
+    "products": {
+        "ourProducts": "Our Products",
+        "aquaForceSwimmingPaddle": "AquaForce Swimming Paddle",
+        "description": "Our first product for better coaching and improvement of technique, developed in 2023, has the basic functions of our paddle. Read more..."
+    },
+    "readMore": "Read more...",
+    "contactUs": {
+        "title": "Contact Us!",
+        "getInTouch": "Get in touch",
+        "description": "Feel free to reach out to us for any inquiries, feedback, or questions you may have. We're here to help!",
+        "enterName": "Enter your name",
+        "enterEmail": "Enter your email",
+        "typeMessage": "Type your message",
+        "send": "Send",
+        "successMessage": "We have recived your message",
+        "errorMessage": "We have problems with our servers please try contacting us by mail"
     }
 
 }

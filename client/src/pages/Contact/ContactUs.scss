@@ -1,10 +1,45 @@
 .box {
-    padding: 0 5% 4% 5%;
+    padding: 2% 5% 4% 5%;
+    background-color: white;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.sec_sp {
+    font-size: 1vw;
+}
+
+.success-message {
+    color: green;
+    font-style: italic;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.form-control {
+    font-size: 1.2vw;
 }
 
 .form-group {
     position: relative;
-    margin-bottom: 3%;
+    margin-top: 2%;
 }
 
 .form-label {
@@ -13,7 +48,6 @@
     left: 1%;
     transform: translateY(-50%);
     color: #d76060;
-    font-size: 100%;
     pointer-events: none;
     transition: top 0.3s, left 0.3s, font-size 0.3s;
 }
@@ -23,7 +57,7 @@ textarea:focus+.form-label,
 input:not(:placeholder-shown)+.form-label {
     top: -2%;
     left: 1%;
-    font-size: 12px;
+    font-size: 2vw;
 }
 
 input,
@@ -43,16 +77,16 @@ textarea:not(:focus):not(:placeholder-shown)+.form-label {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #2342c1;
     color: white;
     padding: 1% 2%;
     border: none;
-    border-radius: 1%;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1vw;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #4666e8;
 }

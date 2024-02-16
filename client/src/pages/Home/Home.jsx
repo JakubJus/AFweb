@@ -38,7 +38,7 @@ const Home = () => {
     <div className={`home-container ${isTextScrolling ? "text-scrolling" : ""}`}>
       <div className="video-container">
         <video
-          src="/videos/AF_promo_final.mp4"
+          src="/videos/AF_promo_final.mov"
           type="video/mp4"
           autoPlay
           muted

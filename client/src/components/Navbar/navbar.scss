@@ -1,21 +1,23 @@
 .navbar {
     position: fixed;
     /* changed from absolute to fixed */
+    left: 0;
     top: 0;
-    /* added to position it at the top */
     width: 100%;
     /* added to make it span the entire width */
     height: 4vw;
     display: flex;
+    align-items: center;
     vertical-align: middle;
-    background: linear-gradient(90deg, rgb(51, 85, 198), rgb(240, 238, 237));
-    padding-bottom: 1%;
+    padding-top: 5px;
+    background: rgb(255, 255, 255);
     z-index: 1000;
+    text-transform: uppercase;
     /* added to ensure it's above other content */
 }
 
 .wrapper {
-    max-width: 100vw;
+    max-width: 100%;
     height: 100%;
     padding: 1% 3%;
     display: flex;
@@ -38,7 +40,7 @@
         border-radius: 50%;
         padding: 0.2vw;
         margin: 6%;
-        transition: filter 300ms;
+        transition: filter 500ms;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -63,32 +65,4 @@
     .item {
         display: flexbox;
     }
-}
-
-.dropdown-content {
-    position: fixed;
-    /* Changed */
-    left: 90%;
-    /* Change from 90% to 0 */
-    top: 5vw;
-    /* Added to position it below the navbar */
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1001;
-    padding: 1%;
-}
-
-.dropdown-content ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-content ul li {
-    padding: 10% 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.dropdown-content ul li:last-child {
-    border-bottom: none;
 }

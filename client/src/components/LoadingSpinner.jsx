@@ -8,7 +8,7 @@ const LoadingSpinner = () => {
     if (!isEffectStarted) return;
 
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ";
-    const originalText = "LOADING";
+    const originalText = "AquaForce";
     let iterations = 0;
 
     const interval = setInterval(() => {
@@ -19,7 +19,7 @@ const LoadingSpinner = () => {
         return letters[Math.floor(Math.random() * letters.length)];
       }).join('');
 
-      iterations += 1 / 4;
+      iterations += 1 / 3;
       if (iterations > originalText.length) {
         clearInterval(interval);
       }
@@ -30,7 +30,7 @@ const LoadingSpinner = () => {
     return () => clearInterval(interval);
   }, [isEffectStarted]); 
 
-  const [randomText, setRandomText] = useState("LOADING");
+  const [randomText, setRandomText] = useState("AquaForce");
 
   return (
     <div className="loading-spinner-container">

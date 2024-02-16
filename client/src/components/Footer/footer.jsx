@@ -51,7 +51,7 @@ const Footer = () => {
                     <span className="copyright">© Copyright 2023. All Rights Reserved.</span>
                 </div>
                 <div className="right">
-                    {/* <img src="images/KTH_logo.png" alt="KTH" style={{ height: '50px' }} /> */}
+                    <img src="images/KTH_logo.png" alt="KTH" style={{ height: '50px' }} />
                 </div>
             </div>
         </div>

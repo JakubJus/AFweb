@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "./navbar.scss";
 import EN from '/images/EN.png';
@@ -8,15 +7,10 @@ import SWE from '/images/SWE.png';
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
-  const [open, setOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setOpen(!open);
-  };
+  const location = useLocation();
 
   const toggleLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    toggleDropdown();
   };
 
   return (
@@ -26,44 +20,28 @@ const Navbar = () => {
           <div className="left">
             <Link className="link" to="/">
               <div className="logo">
-                <img src="images/logo.png" alt="AquaForce" style={{ width: "25%" }} />
+                <img src="images/logo.png" alt="AquaForce" style={{ width: "30%" }} />
               </div>
             </Link>
           </div>
           
           <div className="right">
-            
             <div className="item">
-              <Link className="link" to="/swimmingpaddle">{t('swimmingpaddle')}</Link>
+              <Link className={`link ${location.pathname === "/swimmingpaddle" ? "active" : ""}`} to="/swimmingpaddle">{t('swimmingpaddle')}</Link>
             </div>
             <div className="item">
-              <Link className="link" to="/about">{t('about')}</Link>
+              <Link className={`link ${location.pathname === "/about" ? "active" : ""}`} to="/about">{t('about')}</Link>
             </div>
             <div className="item">
-              <Link className="link" to="/contact">{t('contact')}</Link>
+              <Link className={`link ${location.pathname === "/contact" ? "active" : ""}`} to="/contact">{t('contact')}</Link>
             </div>
             <div className="item">
-              <img src={i18n.language === "en" ? EN : SWE} alt="" style={{ width: "2vw" }} />
-              <button className="icon-button" onClick={toggleDropdown}>
-                <ArrowDropDownIcon style={{ width: "3vw" }} />
-              </button>
+              <img src={EN} alt="English" style={{ width: "2vw", opacity: i18n.language === "en" ? 1 : 0.5, paddingRight: "5px" }} onClick={() => toggleLanguage('en')} />
+              <img src={SWE} alt="Swedish" style={{ width: "2vw", opacity: i18n.language === "sw" ? 1 : 0.5 }} onClick={() => toggleLanguage('sw')} />
             </div>
           </div>
         </div>
       </div>
-      {open && (
-        <div className="dropdown-content">
-          <ul>
-            <div className="link">
-            <li onClick={() => toggleLanguage('en')}>{t('english')}</li>
-            </div>
-            <div className="link">
-            <li onClick={() => toggleLanguage('sw')}>{t('swedish')}</li>
-            </div>
-          </ul>
-          
-        </div>
-      )}
     </>
   );
 }

@@ -1,11 +1,12 @@
 import React from "react";
+import { useState, useEffect } from 'react';
 import "./Product.scss";
 import PhonelinkIcon from '@mui/icons-material/Phonelink';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 const Product = () => {
     const { t } = useTranslation(); // Access translation functions
-
+   
     return (
         <div className="cent">
             <h1>{t('product.title')}</h1>

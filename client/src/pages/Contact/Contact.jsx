@@ -1,7 +1,7 @@
 import './Contact.scss';
 import React from 'react';
 import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
-import ContactUs from "./ContactUs";
+import ContactUs from './ContactUs';
 
 const About = () => {
   const { t } = useTranslation(); // Access translation functions
@@ -13,15 +13,14 @@ const About = () => {
       image: './images/JakubJ.jpg',
       number: '(+46) 0760293682',
       email: 'jakubj@kth.se',
-      description: t('team.members.jakub.description'), // Fetch translated description
-      position: t('team.members.jakub.position'), // Fetch translated position
+      
       linkedin: 'https://www.linkedin.com/in/jakub-juszkiewicz-05196b262/',
     }
   ];
 
   return (
     <div className="cent">
-      <div>
+      <div className='contact'>
         <h1>{t('team.title')}</h1> {/* Fetch translated title */}
         <div className="team-members-container">
           {teamMembers.map((member) => (
