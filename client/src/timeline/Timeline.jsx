@@ -25,7 +25,7 @@ const Timeline = () => {
             contentStyle={{ background: 'white', color: '#555' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
             date={event.date}
-            iconStyle={{ background: '#f15a24', color: '#fff' }} // Set color for the circle in the middle
+            iconStyle={{ background: '#51E9FE', color: '#fff' }} // Set color for the circle in the middle
             icon={<i className="fas fa-circle"></i>}
           >
             <h3 className="vertical-timeline-element-title">{event.title}</h3>
