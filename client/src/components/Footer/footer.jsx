@@ -51,9 +51,7 @@ const Footer = () => {
                     </span>
                     
                 </div>
-                <div className="right">
-                    <img src="images/KTH_logo.png" alt="KTH" style={{ height: '50px' }} />
-                </div>
+               
             </div>
         </div>
     );
