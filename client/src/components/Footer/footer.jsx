@@ -45,10 +45,10 @@ const Footer = () => {
             </div>
             <div className="bottom">
                 <div className="left">
-                    <span className="logo">
-                        <img src="images/small_logo.png" alt="AquaForce" style={{ height: '50px' }} />
+                     <span className="logo">
+                        <img src="images/small_logo.png" alt="AquaForce" style={{ width: '4%' }} />
+                        <span className="copyright">© Copyright 2023. All Rights Reserved.</span>
                     </span>
-                    <span className="copyright">© Copyright 2023. All Rights Reserved.</span>
                 </div>
                 
             </div>
