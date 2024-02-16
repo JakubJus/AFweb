@@ -45,12 +45,15 @@ const Footer = () => {
             </div>
             <div className="bottom">
                 <div className="left">
-                     <span className="logo">
+                    <span className="logo">
                         <img src="images/small_logo.png" alt="AquaForce" style={{ width: '4%' }} />
                         <span className="copyright">© Copyright 2023. All Rights Reserved.</span>
                     </span>
+                    
                 </div>
-                
+                <div className="right">
+                    <img src="images/KTH_logo.png" alt="KTH" style={{ height: '50px' }} />
+                </div>
             </div>
         </div>
     );
